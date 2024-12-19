@@ -1,0 +1,26 @@
+*Setting Up the Environment
+
+1.Create a Python environment with Python 3.10: conda create --prefix ./env python==3.10 -y
+
+2.Activate the environment: source activate ./env
+
+3.Install the project dependencies: pip install -r requirements.txt
+
+4.Unzip the sort.zip file to extract the necessary sort module: unzip sort.zip
+
+5.Navigate into the sort directory: cd sort
+
+6.Install the required dependencies for sort: pip install -r requirements.txt
+
+7.Navigate back to the root project directory: cd ..
+
+*Running the Project
+
+1.Run the main.py file with the sample input video file (sample.mp4) to generate the test.csv file: python main.py
+
+2.Run add_missing_data.py to interpolate values and match up missing frames: python add_missing_data.py
+
+3.Run visualize.py to visualize the license plate detection results by passing in the interpolated CSV file. This will generate the output video: python visualize.py
+
+
+				"The resulting output video will be saved as out.mp4."
